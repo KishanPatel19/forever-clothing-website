@@ -25,7 +25,7 @@ export const products = [
     price: 100,
     image: [p_img1],
     category: "Women",
-    subCategory: "Topwear",
+    subCategory: "Bottomwear",
     sizes: ["S", "M", "L"],
     date: 1716634345448,
     bestseller: true
@@ -73,7 +73,7 @@ export const products = [
     price: 800,
     image: [p_img5],
     category: "Women",
-    subCategory: "Topwear",
+    subCategory: "Bottomwear",
     sizes: ["S", "M", "L"],
     date: 1716621345451,
     bestseller: false
@@ -85,7 +85,7 @@ export const products = [
     price: 700,
     image: [p_img6],
     category: "Men",
-    subCategory: "Topwear",
+    subCategory: "Winterwear",
     sizes: ["L", "XL"],
     date: 1716621345452,
     bestseller: true
@@ -193,7 +193,7 @@ export const products = [
     price: 650,
     image: [p_img15],
     category: "Women",
-    subCategory: "Topwear",
+    subCategory: "Winterwear",
     sizes: ["S", "M", "L"],
     date: 1716621345461,
     bestseller: false
