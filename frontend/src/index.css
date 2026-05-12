@@ -8,6 +8,9 @@ a.active hr{
 *{
   font-family: outfit;
 }
+::-webkit-scrollbar{
+  display: none;
+}
 
 .prata-regular {
   font-family: "Prata", serif;
