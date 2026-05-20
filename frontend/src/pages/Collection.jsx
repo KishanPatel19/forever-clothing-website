@@ -75,7 +75,7 @@ function Collection() {
 
   useEffect(() => {
     applyFilter();
-  }, [category, subCategory , search , showSearch]);
+  }, [category, subCategory , search , showSearch,products]);
 
   return (
     <div className=" flex flex-col sm:flex-row border-t border-gray-300 pt-10 gap-1 sm:gap-10 ">

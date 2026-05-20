@@ -19,7 +19,7 @@ const loginUser = async(req,res)=>{
 
     
 
-    //check user ids available or not
+    //check user is available or not
     if(!user){
         res.json({success:false,message:"User does not exist"});
     }
@@ -60,7 +60,7 @@ const registerUser = async (req,res)=>{
 
     //Check password length
     if(password.length < 8){
-        res.json({success:false , message:"Password length must be grater than seven "})
+       return res.json({success:false , message:"Password length must be grater than seven "})
     }
 
     //hashing password
