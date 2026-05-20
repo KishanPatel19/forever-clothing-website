@@ -99,11 +99,17 @@ const ShopContextProvider = (props)=>{
     getProducts()
    },[products])
 
+   useEffect(()=>{
+    if(!token && localStorage.getItem("token")){
+        setToken(localStorage.getItem("token"))
+    }
+   },[])
+
 
     const value ={
         products , currency , delivery_fee,
         search,setSearch,showSearch,setShowSearch,
-        cartItems,addToCart,getCartCount,updateQuantity,
+        cartItems,setCartItems,addToCart,getCartCount,updateQuantity,
         getCartAmount,navigate,backend_url,token,setToken
 
     }
