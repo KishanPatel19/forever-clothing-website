@@ -18,7 +18,7 @@ const orderSchema = mongoose.Schema({
         required:true
     },
     status:{
-        type:Number,
+        type:String,
         required:true,
         default:"Order Placed"
 
@@ -28,8 +28,9 @@ const orderSchema = mongoose.Schema({
         required:true
     },
     payment:{
-        type:Number,
-        required:true
+        type:Boolean,
+        required:true,
+        default:false
     },
     date:{
         type:Number,
