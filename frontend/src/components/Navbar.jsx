@@ -44,14 +44,17 @@ function Navbar() {
         <div className='flex items-center gap-6'>
             <img src={search} onClick={()=>setShowSearch(true)} className='w-5 cursor-pointer' alt="search icon" />
             <div className='group relative'>
-                <img src={profile} className='w-5 cursor-pointer' alt="" />
-                <div className='group-hover:block hidden absolute right-0 pt-4 dropdown-menu'>
+                <img onClick={()=> token ? null : navigate('/login')} src={profile} className='w-5 cursor-pointer' alt="" />
+                {/* --------drop down menu ----------- */}
+              {
+                token &&   <div className='group-hover:block hidden absolute right-0 pt-4 dropdown-menu'>
                     <div className='flex flex-col py-3 px-5 w-36 bg-slate-100 text-gray-500 rounded'>
                         <p className='cursor-pointer hover:text-black'>My Profile</p>
-                        <p className='cursor-pointer hover:text-black'>Orders</p>
+                        <p onClick={()=>navigate('/orders')} className='cursor-pointer hover:text-black'>Orders</p>
                         <p onClick={()=>logout()} className='cursor-pointer hover:text-black'>Logout</p>
                     </div>
                 </div>
+              }
             </div>
 
             <Link className='relative' to='/cart'>
