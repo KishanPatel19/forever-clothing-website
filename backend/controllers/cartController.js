@@ -35,7 +35,7 @@ const updateCart = async(req,res)=>{
 
     try {
         const {userId,itemId,size,quantity}=req.body;
-        console.log("Quantity in backend" , quantity)
+        
         
         const userData = await userModel.findById(userId);
         const cartData = await userData.cartData;
