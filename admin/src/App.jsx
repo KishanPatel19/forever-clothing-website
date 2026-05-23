@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar";
 import { Routes, Route } from "react-router-dom";
 import Add from "./pages/Add";
 import List from "./pages/List";
-import Orders from "./pages/orders";
+import Orders from "./pages/Orders";
 import { useState } from "react";
 import Login from "./components/Login";
 
