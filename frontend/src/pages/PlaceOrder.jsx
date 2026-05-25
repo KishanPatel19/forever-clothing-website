@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import Title from '../components/Title'
-import CartTotal from '../components/cartTotal'
+import CartTotal from '../components/CartTotal'
 import stripe from '../assets/stripe.png'
 import razorpay from '../assets/razorpay.png'
 import { ShopContext } from '../context/ShopContext'

@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import Title from '../components/Title'
 import bin from '../assets/bin.png'
-import CartTotal from '../components/cartTotal'
+import CartTotal from '../components/CartTotal'
 
 function Cart() {
 
